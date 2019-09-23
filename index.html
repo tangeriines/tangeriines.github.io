@@ -6,14 +6,6 @@
 </head>
   <script src="pixi/pixi.min.js"></script>
 <body>
-  <script type="text/javascript">
-    let type = "WebGL"
-    if(!PIXI.utils.isWebGLSupported()){
-      type = "canvas"
-    }
-
-    PIXI.utils.sayHello(type)
-  </script>
     <script>
 const app = new PIXI.Application({ backgroundColor: 0x663366 });
 document.body.appendChild(app.view);
@@ -21,7 +13,7 @@ document.body.appendChild(app.view);
 // Scale mode for all textures, will retain pixelation
 PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
 
-const sprite = PIXI.Sprite.from('examples/images/teun.png');
+const sprite = PIXI.Sprite.from('examples/images/Teun.png');
 
 // Set the initial position
 sprite.anchor.set(0.5);
